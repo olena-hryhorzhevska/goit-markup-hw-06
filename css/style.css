@@ -407,13 +407,17 @@ img {
   display: flex;
   padding: 72px 0;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    image-set(
-      url(../images/section-1/bg-mobile.jpg) 1x,
-      url(../images/section-1/bg-mobile@2x.jpg) 2x
-    );
+    url(../images/section-1/bg-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media screen and (max-width: 767px) and (min-resolution: 2x) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/section-1/bg-mobile@2x.jpg);
+  }
 }
 
 .hero-title {
