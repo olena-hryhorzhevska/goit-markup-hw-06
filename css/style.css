@@ -168,7 +168,6 @@ img {
   color: #2e2f42;
 }
 
-.item-mob-link:active,
 .item-mob-link.current {
   color: #404bbf;
 }
@@ -190,7 +189,7 @@ img {
   white-space: nowrap;
 }
 
-.address-link-mob:active {
+.address-item-mob:first-child .address-link-mob {
   color: #404bbf;
 }
 
